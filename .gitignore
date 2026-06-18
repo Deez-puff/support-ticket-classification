@@ -1,0 +1,6 @@
+data/all_tickets_processed_improved_v3.csv
+data/*.png
+data/*.pkl
+__pycache__/
+*.pyc
+.env
