@@ -1,4 +1,4 @@
-# 🎫 Support Ticket Classification & Prioritization System
+# Support Ticket Classification & Prioritization System
 
 ![Python](https://img.shields.io/badge/Python-3.14-blue?style=for-the-badge&logo=python)
 ![Scikit-learn](https://img.shields.io/badge/Scikit--learn-ML-orange?style=for-the-badge&logo=scikit-learn)
@@ -10,7 +10,7 @@
 
 ---
 
-## 📌 Table of Contents
+## Table of Contents
 - [About the Project](#about-the-project)
 - [How It Works](#how-it-works)
 - [Key Features](#key-features)
@@ -27,7 +27,7 @@
 
 ---
 
-## 🧠 About the Project
+## About the Project
 
 Customer support teams receive hundreds or thousands of tickets every day. Manually sorting them into categories and figuring out which ones are urgent wastes valuable time. This project builds a **Machine Learning system** that:
 
@@ -134,7 +134,7 @@ Raw Ticket Text
 
 ---
 
-## ✨ Key Features
+## Key Features
 
 | Feature | Description |
 |---|---|
@@ -150,7 +150,7 @@ Raw Ticket Text
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 support-ticket-classifier/
 
 │
@@ -193,7 +193,7 @@ support-ticket-classifier/
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Category | Tools Used |
 |---|---|
@@ -208,7 +208,7 @@ support-ticket-classifier/
 
 ---
 
-## 📦 Setup and Installation
+## Setup and Installation
 
 ### 1 — Clone the Repository
 git clone https://github.com/Deez-puff/support-ticket-classifier.git
@@ -229,7 +229,7 @@ Place the CSV file inside the data/ folder.
 
 ---
 
-## ▶️ How to Run
+## How to Run
 
 ### Option 1 — Web App (Recommended)
 python -m streamlit run app.py
@@ -241,7 +241,7 @@ Prints training progress, evaluation metrics, classification report, and saves t
 
 ---
 
-## 🌐 Web App Usage
+## Web App Usage
 
 ### Mode 1 — Train New Model
 1. Upload your CSV dataset
@@ -258,7 +258,7 @@ Prints training progress, evaluation metrics, classification report, and saves t
 
 ---
 
-## 📐 How Tickets Are Categorized
+## How Tickets Are Categorized
 
 The classification pipeline works as follows:
 
@@ -268,7 +268,7 @@ The classification pipeline works as follows:
 
 ---
 
-## ⚡ How Priority Is Decided
+## How Priority Is Decided
 
 Since the dataset does not include a priority label, a rule-based keyword detection system was built to simulate real-world urgency triage:
 
@@ -280,7 +280,7 @@ Since the dataset does not include a priority label, a rule-based keyword detect
 
 ---
 
-## 📊 Model Evaluation Results
+## Model Evaluation Results
 
 The model was evaluated on a held-out test set of 9,568 tickets (20% of the dataset):
 
@@ -306,7 +306,7 @@ The model was evaluated on a held-out test set of 9,568 tickets (20% of the data
 
 ---
 
-## 🔄 Dataset Selection Process
+## Dataset Selection Process
 
 This project initially used the Kaggle Customer Support Ticket Dataset but diagnostic testing revealed that its ticket descriptions were synthetically templated — the text carried almost no relationship to the assigned category labels. The model trained on it performed at roughly random-guess accuracy (around 20% for 5 categories).
 
@@ -316,7 +316,7 @@ This demonstrates a key real-world ML skill: diagnosing whether poor model perfo
 
 ---
 
-## 🚀 Future Improvements
+## Future Improvements
 
 - [ ] Replace rule-based priority system with a trained ML priority classifier
 - [ ] Try Random Forest, XGBoost, or fine-tuned BERT for higher accuracy
@@ -328,13 +328,13 @@ This demonstrates a key real-world ML skill: diagnosing whether poor model perfo
 
 ---
 
-## 👨‍💻 Author
+## Author
 Deepak Rajesh
 
 Built as part of **Future Interns ML Task 2 — 2026**
 
 ---
 
-## 📄 License
+## License
 
 This project is open source and available under the MIT License.
